@@ -24,5 +24,4 @@ resource "btp_subaccount" "subaccount" {
   name      = var.subaccount_name
   subdomain = replace(lower(replace(var.subaccount_name, "_", "-")), " ", "")
   region    = var.region
-  parent_id = var.parent_directory
 }
