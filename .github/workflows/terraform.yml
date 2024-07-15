@@ -9,6 +9,9 @@ jobs:
   Terraform:
     name: Terraform Plan & Apply
     runs-on: ubuntu-latest
+    env:
+      TF_VAR_username: ${{ secrets.BTP_USERNAME }}
+      TF_VAR_password: ${{ secrets.BTP_PASSWORD }}
     steps:
 
     - name: Checkout Repo
