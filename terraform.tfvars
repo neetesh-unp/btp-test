@@ -1,5 +1,5 @@
 globalaccount      = "e3f45bb7trial"
 username           = "$var.username"
 password           = "$var.password"
-region             = "$var.region"
-subaccount_name    = "$var.subaccount_name"
+region             = "us-east-1"
+subaccount_name    = "ns_test"

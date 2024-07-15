@@ -17,11 +17,11 @@ provider "btp" {
   password      = var.password
 }
 
-# # ------------------------------------------------------------------------------------------------------
-# # Creation of Subaccount
-# # ------------------------------------------------------------------------------------------------------
-# resource "btp_subaccount" "subaccount" {
-#   name      = var.subaccount_name
-#   subdomain = replace(lower(replace(var.subaccount_name, "_", "-")), " ", "")
-#   region    = var.region
-# }
+# ------------------------------------------------------------------------------------------------------
+# Creation of Subaccount
+# ------------------------------------------------------------------------------------------------------
+resource "btp_subaccount" "subaccount" {
+  name      = var.subaccount_name
+  subdomain = replace(lower(replace(var.subaccount_name, "_", "-")), " ", "")
+  region    = var.region
+}
