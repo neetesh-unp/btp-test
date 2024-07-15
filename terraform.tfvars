@@ -1,4 +1,4 @@
-globalaccount      = "$var.globalaccount"
+globalaccount      = "e3f45bb7trial"
 username           = "$var.username"
 password           = "$var.password"
 region             = "$var.region"

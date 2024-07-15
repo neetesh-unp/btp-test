@@ -1,4 +1,4 @@
-output "subaccount_id" {
-  value = btp_subaccount.subaccount.id
-}
+# output "subaccount_id" {
+#   value = btp_subaccount.subaccount.id
+# }
 
