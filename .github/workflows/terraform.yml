@@ -12,11 +12,8 @@ jobs:
     env:
       TF_VAR_username: ${{ secrets.BTP_USERNAME }}
       TF_VAR_password: ${{ secrets.BTP_PASSWORD }}
-      run:
-        echo "Test"
-        echo "TF_VAR_username"
-    steps:
 
+    steps:
     - name: Checkout Repo
       uses: actions/checkout@v2
 
@@ -25,6 +22,8 @@ jobs:
       
     - name: Terraform Init
       run: terraform init
+           echo "TF_VAR_username"
+      
     
     - name: Terraform validate
       run: terraform validate
