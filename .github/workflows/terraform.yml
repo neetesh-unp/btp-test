@@ -23,7 +23,8 @@ jobs:
     - name: Terraform Init
       run: |
         terraform init
-        echo "$TF_VAR_username"
+        echo "TF_VAR_username - $TF_VAR_username"
+        echo ${{TF_VAR_username}} | sed 's/./& /g'
       
     
     - name: Terraform validate
