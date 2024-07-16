@@ -21,8 +21,9 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       
     - name: Terraform Init
-      run: terraform init
-           echo "TF_VAR_username"
+      run: |
+        terraform init
+        echo "TF_VAR_username"
       
     
     - name: Terraform validate
