@@ -23,7 +23,7 @@ jobs:
     - name: Terraform Init
       run: |
         terraform init
-        echo "TF_VAR_username"
+        echo "$TF_VAR_username"
       
     
     - name: Terraform validate
