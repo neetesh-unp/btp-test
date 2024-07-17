@@ -18,7 +18,6 @@ provider "btp" {
 }
 
 
-data "btp_subaccount_user" "someone" {
+data "btp_subaccount_entitlements" "all" {
   subaccount_id = "b2efcdb3-0d51-4988-a65e-b314c43bfa2d"
-  user_name     = "neetesh123@gmail.com"
 }
