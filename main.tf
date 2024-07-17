@@ -17,11 +17,7 @@ provider "btp" {
   password      = var.password
 }
 
-# ------------------------------------------------------------------------------------------------------
-# Creation of Subaccount
-# ------------------------------------------------------------------------------------------------------
-resource "btp_subaccount" "subaccount" {
-  name      = var.subaccount_name
-  subdomain = replace(lower(replace(var.subaccount_name, "_", "-")), " ", "")
-  region    = var.region
+
+data "btp_subaccount_users" "defaultidp" {
+  subaccount_id = "b2efcdb3-0d51-4988-a65e-b314c43bfa2d"
 }
